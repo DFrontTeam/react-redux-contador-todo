@@ -4,5 +4,5 @@ import {combineReducers} from 'redux'
 
 export const reducers = combineReducers({
   counters: reducerCounter,
-  //AÑADE
+  //AÑADE.
 });
