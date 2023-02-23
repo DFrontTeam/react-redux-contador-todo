@@ -1,20 +1,11 @@
 export const initialStateTodoList = {
-  todo: '',
+  // AÑADE INITIAL STATE
 };
 
 export const actionsTypes = {
-  ADD_TODO: 'ADD_TODO',
+  // AÑADE TYPE
 };
 
 export const reducerTodoList = (state = initialStateTodoList, action) => {
-  switch (action.type) {
-    case actionsTypes.ADD_TODO:
-      console.log('reducer',{...state,todo:action.payload})
-       return {...state,todo:action.payload}
-      
-    default:
-      return  {
-        todo: state.todo,
-      };
-  }
+  // CREA REDUCER
 };

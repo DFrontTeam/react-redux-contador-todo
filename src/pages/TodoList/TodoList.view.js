@@ -1,12 +1,7 @@
 import React, { useRef } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-
-import { addToDo } from '../../store/todo-list/actions';
 
 const TodoList = () => {
   let input = useRef();
-  const dispatch = useDispatch();
-  const todoList = useSelector((state) => state.todoList.todo);
 
   return (
     <div
@@ -28,18 +23,7 @@ const TodoList = () => {
       >
         <div>
           <h3>Añade una tarea</h3>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              if (!input.value.trim()) {
-
-                return;
-              }
-              console.log('input.value',input.value)
-              dispatch(addToDo(input.value));
-              input.value = '';
-            }}
-          >
+          <form onSubmit={(e) => console.log(e)}>
             <input
               ref={(node) => {
                 input = node;
@@ -48,7 +32,7 @@ const TodoList = () => {
             />
             <button type="submit">Enviar</button>
           </form>
-          <p>VALOR: {todoList}</p>
+          <p>VALOR: </p>
         </div>
       </div>
     </div>
