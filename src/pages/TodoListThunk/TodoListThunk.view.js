@@ -24,13 +24,13 @@ const TodoListThunk = () => {
         <div>
           <h3>Pokemon por capturar</h3>
           <ul>
-
+            {/** crea la lista */}
           </ul>
         </div>
         <div>
           <h3>Pokemon capturados</h3>
           <ul>
-
+            {/** crea la lista */}
           </ul>
         </div>
       </div>
