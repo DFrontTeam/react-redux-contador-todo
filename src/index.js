@@ -1,10 +1,11 @@
 import React from 'react';
-import App from './App';
-import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
 import { reducers } from './store';
 import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
+
+import App from './App';
 
 const store = createStore(reducers,applyMiddleware(thunk));
 
