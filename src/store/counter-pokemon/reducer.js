@@ -3,10 +3,7 @@ export const actionsTypes = {
 };
 
 export const initialStateCounterPokemon = {
-  pokemonImg: {
-    name: '',
-    img: ''
-  },
+  pokemonImg: '',
 };
 
 const setPokemonImg = (state,payload) => {
