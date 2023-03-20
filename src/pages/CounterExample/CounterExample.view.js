@@ -20,7 +20,7 @@ const CounterExample = () => {
     >
       {' '}
       <h1 style={{ textAlign: 'center' }}>
-        Counter Example to see how redux work:
+        Counter Example to see how redux work
       </h1>{' '}
       <div
         style={{
